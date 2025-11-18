@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__text row"> <!-- flex with text and logo -->
+        <div class="col">
+          <h1 class="header__text__title">Coding for Web Design</h1>
+          <h2 class="header__text__subtitle">Learn HTML, CSS & JavaScript</h2>
+        </div>
+        <div class="col"> <!-- insert logo -->
+          <a class="logo-container" href="#">
+            <img class="img logo" src="logo.png" alt="Coding for web design logo">
+          </a>
+        </div>
+      </div>
+      <nav class="nav row">
+        <ul class="nav__list nav__list--primary">
+          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+        </ul>
+        <ul class="nav__list nav__list--secondary">
+          <li class="nav__item" ><a class="nav__link nav__link--button" href="#">Log In</a></li>
+          <li class="nav__item"><a class="nav__link nav__link--button2" href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main"> <!-- COULD MAKE ICONS GREEN #9C4CE-->
+    <section class="section-learn container">
+      <h2 class="section__title">What can you learn?</h2>
+      <div class="row">
+        <div class="col section-learn__text section-learn__text__row">
+          <p class="col section-learn__text__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae iure natus dolor, ducimus aspernatur ut esse alias libero, necessitatibus consequuntur magni voluptas assumenda, velit cupiditate dignissimos porro nobis! Maiores, unde.</p>
+          <ul class="col section-learn__text__list">
+            <li class="section-learn__text__list__item">Lorem</li> <!-- PUT PURPLE TICKS FOR BULLET POINTS-->
+            <li class="section-learn__text__list__item">Lorem</li>
+            <li class="section-learn__text__list__item">Lorem</li>
+          </ul>
+        </div>
+        <div class="col section-learn__img section-learn__img--study">
+          <img class="img img-icon--desktop" src="icon-study.png" alt="study icon">
+        </div>
+      </div>
+      <div class="row"> <!-- PUT BULB ICON HERE. Make it appear for DESKTOP-->
+        <div class="col section-learn__img section-learn__img--bulb section-learn__img--large-screen">
+          <img class="img img-icon--desktop" src="icon-bulb.png" alt="bulb icon">
+        </div>
+        <div class="col section-learn__text section-learn__text__row section-learn__text__row--2">
+          <p class="col section-learn__text__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae iure natus dolor, ducimus aspernatur ut esse alias libero, necessitatibus consequuntur magni voluptas assumenda, velit cupiditate dignissimos porro nobis! Maiores, unde. </p>
+          <ul class="col section-learn__text__list">
+            <li class="section-learn__text__list__item">Lorem</li>
+            <li class="section-learn__text__list__item">Lorem</li>
+            <li class="section-learn__text__list__item">Lorem</li>
+          </ul>
+        </div> 
+        <!-- PUT BULB ICON HERE. Make it appear for MOBILE. SET DISPLAY: NONE FOR DESKTOP!-->
+        <div class="col section-learn__img section-learn__img--mobile">
+          <img class="img" src="icon-bulb.png" alt="bulb icon">
+        </div>
+      </div> 
+    </section>
+
+    <section class="technologies container">
+      <!-- make two cols for each technology? -->
+     <!-- make a flex with column direction? -->
+      <h2 class="section__title">Technologies</h2>
+      <h3 class="section__subtitle--techologies">HTML</h3>
+      <div class="row technologies__two--cols">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt exercitationem quam quaerat libero quas explicabo possimus ad excepturi. Sapiente, magnam!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt exercitationem quam quaerat libero quas explicabo possimus ad excepturi. Sapiente, magnam! </p>
+      </div>
+      <h3 class="section__subtitle--techologies">CSS</h3>
+      <div class="row technologies__two--cols">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt exercitationem quam quaerat libero quas explicabo possimus ad excepturi. Sapiente, magnam!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt exercitationem quam quaerat libero quas explicabo possimus ad excepturi. Sapiente, magnam! </p>
+      </div>
+      <h3 class="section__subtitle--techologies">JavaScript</h3>
+      <div class="row technologies__two--cols">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt exercitationem quam quaerat libero quas explicabo possimus ad excepturi. Sapiente, magnam!.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt exercitationem quam quaerat libero quas explicabo possimus ad excepturi. Sapiente, magnam!</p>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2 class="section__title">Testimonials</h2>
+      <div class="row testimonials__row">
+        <div class="col">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus recusandae et non, dolorum labore sint!</p>
+        </div>
+        <div class="col">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus recusandae et non, dolorum labore sint!</p>
+        </div>
+        <div class="col">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus recusandae et non, dolorum labore sint!</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <!-- ADD SENTENCE HERE? MAKE SAME COLOUR AS BLUE LINKS! "LEARN WEB DESIGN TODAY"-->
+      <div class="row">
+        <div class="col col1">
+          <h4 class="footer__subtitle">Coding for web design</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="col col2">
+          <h4 class="footer__subtitle">Sitemap</h4>
+          <ul class="footer__nav">
+            <li class="footer__nav__item"><a class="footer__nav__link" href="#">Home</a></li>
+            <li class="footer__nav__item"><a class="footer__nav__link" href="#">About</a></li>
+            <li class="footer__nav__item"><a class="footer__nav__link" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+          <h4 class="footer__subtitle">Reach out to us</h4>
+          <ul class="footer__contact-list"> <!-- use ::before to put icons before the list item  -->
+            <li class="footer__contact-list__item footer__contact-list__item--phone">Phone</li>
+            <li class="footer__contact-list__item footer__contact-list__item--email">Email</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

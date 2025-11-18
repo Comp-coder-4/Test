@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  background-color: #E4F0FC;
+  color: #444444;
+}
+html {
+  font-size: 100%;
+  font-size: 16px;
+}
+img {
+  display: block;
+  max-width: 70%;
+}
+
+/* Typography */
+/* Headings: manrope
+    body text: inter */
+/* remember font-size*/ 
+body {
+  font-size: 1.5rem;
+  font-family: inter, sans-serif;
+}
+.header, .footer {
+  border-top: 5px solid #B6D6F7;
+  border-bottom: 5px solid #B6D6F7;
+}
+.main { /* added this because the footer was too close to the last testimonial*/
+  margin-bottom: 2.5em;
+}
+.header__text__title {
+  font-size: 3.4375rem;
+  font-family: manrope, sans-serif;
+  color: #9c4ceb;
+  text-align: center;
+}
+.header__text__subtitle {
+  font-size: 1.875rem;
+  font-family: manrope, sans-serif;
+  color: #444444;
+  text-align: center;
+}
+/* ??????????
+.header, main {
+  border-bottom: px solid #F0FCE4;
+} */
+.nav {
+  /* max-width: 80%; */
+  margin: 0 auto;
+  text-align: center;
+}
+.nav__list {
+  padding-left: 0;
+}
+.nav__list--primary .nav__item + .nav__item {
+  margin-top: 10px;
+}
+.nav__list--secondary .nav__item + .nav__item {
+  margin-top: 20px;
+}
+
+.nav__item, .footer__nav__item {
+  list-style-type: none;
+}
+.nav__link {
+  color: #5151ec;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.nav__link:hover {
+  color:#9c4ceb;
+  font-weight: bold;
+}
+.nav__link--button {
+  background-color: #9c4ceb;
+  padding: 0.2em 1em;
+  border-radius: 100px;
+  color: white;
+  transition: 0.2s;
+}
+.nav__link--button:hover {
+  color: white;
+  opacity: 0.8;
+}
+.nav__link--button2 {
+  color: #9c4ceb;
+  border: 4px solid #9c4ceb;
+  padding: 0.2em 0.8em;
+  border-radius: 100px;
+  transition: 0.2s;
+}
+.nav__link--button2:hover {
+  background-color: #9c4ceb;
+  color: white;
+  opacity: 0.8;
+}
+.section__title {
+  font-family: manrope, sans-serif;
+  color: #9c4ceb;
+}
+.section-learn__img--large-screen {
+  display: none;
+}
+.section-learn__text__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.section-learn__text__list__item::before {
+    content: "✔️";
+}
+.section-learn__text__list__item +
+.section-learn__text__list__item {
+  margin-top: 3px;
+}
+
+.section__subtitle--techologies {
+  color: #444444
+}
+.technologies__two--cols p + p {
+  margin-bottom: 1.4em;
+}
+.technologies__two--cols:last-of-type p + p {
+  margin-bottom: 1em;
+}
+
+/* testimonials */
+.testimonials__row .col {
+  background-color: #9c4ceb94;
+  color: white;
+  padding: 1em;
+  text-align: center
+}
+.testimonials__row .col + .col {
+  margin-top: 1em;
+}
+
+/* footer */
+.footer__subtitle {
+      margin-bottom: 0em;
+    }
+.footer__nav__item + .footer__nav__item {
+   margin-top: 3px;
+}
+.footer__nav, .footer__contact-list {
+  padding-left: 0;
+}
+.footer__nav__item {
+  text-decoration: none;
+}
+.footer__nav__link {
+  color: #444;
+  text-decoration: none;
+  transition: .2s;
+}
+.footer__nav__link:hover {
+  font-weight: bold;
+}
+.footer__contact-list__item {
+  list-style-type: none;
+}
+.footer__contact-list__item--phone::before {
+  content: "☎️    ";
+}
+.footer__contact-list__item--email::before {
+  content: "✉️    ";
+}
+
+/* layouts & spacing */
+.logo-container {
+  display: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+/* media queries*/
+/* ADD BREAKPOINT AT ~ 500PX TO MAKE NAV HORIZONTAL
+@media(min-width: 520px) {
+
+} */
+@media(min-width: 700px) {
+  .container {
+    width: 80%;  
+    max-width: 1000px;
+  }
+  .row {
+    display: flex;
+    }
+  .header__text__title,
+  .header__text__subtitle {
+  text-align: left;
+  }
+  /* .img, .img-container {
+    max-width: 200px;
+  } */
+.logo-container {  /* MAKE LOGO NOT GROW WHEN SCREEN SIZE INCREASES, ONLY WHEN FONT SIZE INCREASES*/
+    display: inline;
+    width: 50%;
+  }
+  .header__text__title {
+    font-size: 4.2968rem;
+  }
+  .header__text__subtitle {
+    font-size: 2.3125rem;
+  }
+  .row.header__text {
+    justify-content: space-between;
+    /* border: 4px solid brown; */
+  }
+  /* .row.header__text .col {
+    border: 4px solid yellow
+  } */
+  .row.header__text .col:nth-of-type(2) {
+    flex-basis: 150px;
+  }
+  .header__text {
+    align-items: center;
+  }
+  .header__text .col:first-of-type {
+    width: 70%;
+  }
+  .header__text .col:nth-of-type(2) {
+    width: 30%;
+    margin-left: 2em;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__list {  /* NAV ITEMS GET BIGGER ON HOVER BECAUSE THEY HAVE MARGIN LEFTS. TRY USE FLEXBOX TO ARRANGE THEM TO AVOID THIS PROBLEM 😀*/
+    display: flex;
+  }
+  .nav__list--primary .nav__item + .nav__item {
+    margin-top: 0;
+    margin-left: .8em;
+  }
+  .nav__list--secondary .nav__item + .nav__item {
+    margin-top: 0;
+    margin-left: .8em;
+  }
+  .section-learn .row {
+    border: 4px solid rgba(0, 0, 255, 0.79);
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 5px solid brown; */
+  }
+  .section-learn .row + .row {
+    margin-top: 1.5em;
+  }
+  .section-learn__img--study {
+    margin-left: 1.5em;
+  }
+  .section-learn__text {
+    /* border: 5px solid darkcyan; */
+    max-width: 60%;
+  }
+
+
+  /* .section-learn .row {
+    border: 4px solid;
+  } */
+  /* need to get smaller icons. try flex-basis on icon container*/
+  /* .section-learn__text {
+    border: 4px solid purple;
+  }
+  .section-learn__img {
+    border: 4px solid yellow;
+  } */
+
+
+
+
+  .section-learn__img--mobile {
+    display: none;
+  }
+  .section-learn__img--large-screen {
+  display: block;
+  margin-right: 1.5em;
+  }
+  .img-icon--desktop {
+    max-width: 284px;
+  }
+  /* .technologies__two--cols p:first-of-type {
+    border: 4px solid rgb(77, 60, 235);
+  } */
+  .technologies .row {
+    /* border: 2px solid #9c4ceb; */
+    align-items: center;
+  }
+   .technologies .row p {
+    padding-right: 1.5em;
+   }
+  .section__subtitle--techologies {
+    margin-bottom: 0;
+  }
+   /* .technologies__two--cols p + p {
+    border: 4px solid;
+   } */
+
+   /* testimonials */
+   .testimonials .section__title {
+    text-align: center;
+   }
+  .testimonials__row .col + .col {
+    margin-top: 0;
+    margin-left: 1em;
+  }
+  
+  /* footer*/
+    /* .footer .col {
+      width: 100%;
+    } */
+    .footer .row {
+      gap: 2em;
+      /* border: 3px solid lime; */
+    }
+    .footer .col1 {
+      flex-shrink: 1;
+      flex-grow: 2;
+      flex-basis: 7ch;
+    }
+    .footer .col2 {
+      flex-basis: 7ch;
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
+    .footer .col3 {
+      flex-basis: 7ch;
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
+    /* everything's that's the next sibling to a .footer__subtite element, remove top margin 😀*/
+    .footer__subtitle + * {
+      margin-top: 4px;
+    }
+    
+
+  
+    /* .footer .col + .col {
+      margin-left: 2em;
+    } */
+  }
+
+  /* ADD BREAKPOINT FOR TECHNOLOGIES SECTION
+  TO SET A MAX WIDTH ON PARAGRAPHS AND CENTER HEADINGS*/
+  @media(min-width: 1000px) {
+    .section-learn__img--study {
+      margin-left: 0;
+    }
+    .section-learn__img--large-screen {
+      margin-right: 0;
+    }
+    .section-learn__text__row {
+      display: flex;
+      align-items: center;
+      /* border: 3px solid tomato; */
+    }
+    .section-learn__text__row--2 {
+      justify-content: flex-end ;
+    }
+    .section-learn__text__text {
+      max-width: 65%;
+    }
+    .section-learn__text__list {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+    .section-learn__text__list__item::before {
+      content: "✔️";
+    }
+    .section-learn__text__list__item + .section-learn__text__list__item {
+      padding-top: 7px;
+    }
+  }
+
+  
+  /* @media(min-width: 1100px) {
+
+  } */
+
